@@ -1,0 +1,19 @@
+<HTML>
+<BODY>
+
+<SCRIPT LANGUAGE="JavaScript">
+  var vector = new Array(8,5,4,7);
+  document.open();
+  imprimirLetras(vector);
+  
+  function imprimirLetras(numeros){
+     numeros.sort();
+     for(var i=0; i < vector.length; i++){
+        document.write(numeros[i]);
+     }
+
+  }
+</SCRIPT>
+
+</BODY>
+</HTML>

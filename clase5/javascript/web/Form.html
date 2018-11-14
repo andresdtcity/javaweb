@@ -1,0 +1,24 @@
+<HTML>
+ <BODY>
+ 
+  <SCRIPT LANGUAGE="JavaScript">
+
+   function validarMail(mail){
+     if (mail.indexOf("@") != -1){
+       return (true);
+     }
+     else{
+       alert("Por favor, escriba una dirección de mail válida");
+       return (false);
+     }
+   }
+
+  </SCRIPT>
+
+   <FORM name="formulario" action="mailto:mail@gmail.com" onSubmit="return validarMail(email.value)">
+      <INPUT type="text" name="email">
+      <INPUT type="submit" value="Enviar mail">
+   </FORM>
+
+ </BODY>
+</HTML>

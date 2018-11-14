@@ -1,0 +1,25 @@
+<HTML>
+    <BODY>
+
+        <SCRIPT LANGUAGE="JavaScript">
+
+            function tildar() {
+                formulario.check.click();
+                
+                var remember = document.getElementById('miId');
+                if (remember.checked) {
+                    alert("Tildado");
+                } else {
+                    alert("Destildado");
+                }
+            }
+
+        </SCRIPT>
+
+        <FORM name="formulario">
+            <INPUT type="checkbox" name="check" id="miId"> Opcion 
+            <P> <INPUT type="button" value="Tildar / Destildar" OnClick="tildar()"> </P>
+        </FORM>
+
+    </BODY>
+</HTML>

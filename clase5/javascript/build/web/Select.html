@@ -1,0 +1,26 @@
+<HTML>
+ <BODY>
+ 
+  <SCRIPT LANGUAGE="JavaScript">
+     
+     function irUrl(formulario){
+       if (formulario.listaBuscadores.selectedIndex > 0){ 
+ 	  location.href = formulario.listaBuscadores.options[formulario.listaBuscadores.selectedIndex].value;
+       }
+       else
+          window.alert("�Seleccione una opci�n!");
+     }
+
+  </SCRIPT>
+
+  <FORM name="formulario">
+     <SELECT name="listaBuscadores" size="1" onChange="irUrl(formulario)">
+         <option SELECTED value="">Seleccione el buscador al que desea ir
+	 <option value="http://www.google.com/">Buscador Google
+	 <option value="http://www.yahoo.com/">Buscador Yahoo!
+	 <option value="http://buscar.opera.com.ar/">Buscador Terra
+     </SELECT>
+  </FORM>
+
+ </BODY>
+</HTML>

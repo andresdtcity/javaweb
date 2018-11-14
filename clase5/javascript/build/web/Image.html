@@ -1,0 +1,21 @@
+<HTML>
+ <BODY>
+ 
+  <SCRIPT LANGUAGE="JavaScript">
+    imagen1 = new Image();
+    imagen2 = new Image();
+    
+    imagen1.src = "imagenes/Sun.gif";
+    imagen2.src = "imagenes/Shamrock.gif";
+
+
+    function intercambiar(nombre,imagen){
+      nombre.src = imagen.src;
+    }
+  </SCRIPT>
+
+  <a href="" onmouseover="intercambiar(img1,imagen1)" onmouseout="intercambiar(img1,imagen2)">
+    <img src="imagenes/Leaf.gif" name="img1"></a>
+
+ </BODY>
+</HTML>

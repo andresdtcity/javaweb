@@ -1,0 +1,14 @@
+<HTML>
+ <BODY>
+  <P> <a href="http://www.google.com">Ir a la página de Google</a> 
+  <P> <a href="http://www.yahoo.com">Ir a la página de Yahoo!</a>
+
+  <SCRIPT LANGUAGE="JavaScript">
+     var i;
+     for (i = 0; i < document.links.length; i++){
+        document.write("El "+ (i+1) + "° " + "href de la página es: " + document.links[i].href);
+     }
+  </SCRIPT>
+
+ </BODY>
+</HTML>

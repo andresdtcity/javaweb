@@ -1,0 +1,28 @@
+<HTML>
+ <BODY>
+ 
+  <SCRIPT LANGUAGE="JavaScript">
+     
+     function mensaje(){
+       chequeado = false;
+       i = 0;
+       while ((!chequeado) && (i < formulario.edad.length)){
+         if (formulario.edad[i].checked){
+ 	    chequeado = true;
+            alert("Usted tiene " + formulario.edad[i].value);      
+         }
+         i++;
+       }
+     }
+
+  </SCRIPT>
+
+   <FORM name="formulario">
+       <P>Seleccione la opción correcta: </P>
+       <INPUT type="radio" name="edad" value="menos de 18 años" OnClick="mensaje()">Menor de 18 años
+       <INPUT type="radio" name="edad" value="18 años" OnClick="mensaje()">18 años
+       <INPUT type="radio" name="edad" value="más de 18 años" OnClick="mensaje()">Mayor de 18 años
+   </FORM>
+
+ </BODY>
+</HTML>
